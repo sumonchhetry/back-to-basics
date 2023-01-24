@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: gray;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      h1 {
+        display: none;
+      }
+
+      /* smartphone screen */
+      @media (max-width: 420px) {
+        body {
+          background: red;
+        }
+
+        #smartphone-screen h1 {
+          display: block;
+        }
+      }
+
+      /* tablet screen */
+      @media (min-width: 421px) and (max-width: 768px) {
+        body {
+          background: blue;
+        }
+
+        #tablet-screen h1 {
+          display: block;
+        }
+      }
+
+      /* normal screen */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background: green;
+        }
+
+        #normal-screen h1 {
+          display: block;
+        }
+      }
+
+      /* wide screen */
+      @media (min-width: 1201px) {
+        body {
+          background: black;
+        }
+
+        #wide-screen h1 {
+          display: block;
+        }
+      }
+
+      /* landscape screen */
+      @media (max-heght: 500px) {
+        body {
+          background: orange;
+        }
+
+        #landscape-screen h1 {
+          display: block;
+        }
+      }
+    </style>
+    <title>Responsive Design</title>
+  </head>
+  <body>
+    <div id="wide-screen">
+      <h1>Wide Screen</h1>
+    </div>
+
+    <div id="normal-screen">
+      <h1>Normal Screen</h1>
+    </div>
+
+    <div id="tablet-screen">
+      <h1>Tablet Screen</h1>
+    </div>
+
+    <div id="smartphone-screen">
+      <h1>SmartPhone Screen</h1>
+    </div>
+
+    <div id="landscape-screen">
+      <h1>Landscape Screen</h1>
+    </div>
+  </body>
+</html>
